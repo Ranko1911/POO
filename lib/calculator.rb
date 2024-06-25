@@ -1,4 +1,6 @@
 # lib/calculator.rb
+require 'pry'
+
 class Ejercicio
   include Comparable 
   include Enumerable
@@ -36,3 +38,9 @@ class Ejercicio
     end
   end
 end
+
+e = Ejercicio.new(1,"primer", ["libro"])
+
+# e.to_s
+
+binding.pry  # Iniciar la sesión de pry
